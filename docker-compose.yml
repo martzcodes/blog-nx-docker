@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  blog-nx-api:
+    container_name: blog-nx-api
+    build:
+        context: .
+        target: blog-nx-api
+    networks:
+        martzcodes:
+  blog-nx-ui:
+    container_name: blog-nx-ui
+    build:
+        context: .
+        target: blog-nx-ui
+    ports:
+      - 80:80
+      - 3333:3333
+    networks:
+        martzcodes:
+networks:
+    martzcodes:
