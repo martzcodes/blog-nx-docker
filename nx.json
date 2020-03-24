@@ -1,0 +1,28 @@
+{
+  "npmScope": "blog-nx-docker",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "blog-nx-docker": {
+      "tags": []
+    },
+    "blog-nx-docker-e2e": {
+      "tags": [],
+      "implicitDependencies": ["blog-nx-docker"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
