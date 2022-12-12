@@ -30,7 +30,7 @@
     "@emotion/core": "10.0.27",
     "@emotion/styled": "10.0.27",
     "document-register-element": "1.13.1",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "react": "16.12.0",
     "react-dom": "16.12.0"
   },
